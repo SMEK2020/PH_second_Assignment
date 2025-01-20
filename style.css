@@ -1,21 +1,182 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-nav{
-    display: flex;
-}
-.navdiv1{
-    display: flex;
-}
-.navbar ul{
-    display: flex;
-}
-.navbar ul li{
-    text-decoration: none;
-    padding-left: 30px;
-}
-header{
+
+body {
     background-color: rgb(247, 247, 247);
+    font-family: "Quicksand", sans-serif;
+}
+
+header {
+    background-color: rgb(247, 247, 247);
+}
+
+nav {
+    padding: 20px 100px;
+}
+
+.nav-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navdiv1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar1 {
+    color: orange;
+}
+
+.navbar2 {
+    color: skyblue;
+}
+
+.navbar3 {
+    color: #05D4DF;
+}
+
+.navbar4 {
+    color: #5D58EF;
+}
+
+.btn-fst, .btn-snd {
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+}
+
+.btn-fst {
+    background-color: orange;
+}
+
+.btn-snd {
+    background-color: black;
+    margin-top: 10px;
+}
+
+.banner {
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(247, 247, 247);
+}
+
+.banner-title {
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+.banner-content{
+    width: 600px;
+}
+
+.banner-p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+#emp {
+    color: orange;
+}
+
+#tvi {
+    color: skyblue;
+}
+
+.heroimg img {
+    max-width: 100%;
+    height: auto;
+}
+.curriculam{
+    background-image: url("assets/bg.png");
+    background-repeat: no-repeat;
+    
+    height: 500px;
+    width: 100%;
+}
+.currtitle{
+    justify-content: center;
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.5rem;
+    
+}
+.currtitle h1{
+    font-weight: 800;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        padding: 10px 20px;
+    }
+
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .heroimg {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+    }
+
+    .banner-p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    body {
+        background-color: rgb(247, 247, 247);
+        color: black;
+    }
+    .banner-content{
+        padding: 0px 50px;
+    }
+
+    .btn-fst, .btn-snd {
+        width: 100px;
+        height: 40px;
+    }
+    .navdiv2{
+        display: none;
+    }
+.navdiv3{
+    display: none;
+}
+
+    .navbar {
+        flex-direction: column;
+    }
 }
