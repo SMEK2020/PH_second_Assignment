@@ -362,6 +362,12 @@ nav {
     color: white;
     padding-top: 8px;
 }
+.date1{
+    background-color: skyblue;
+}
+.date3{
+    background-color: #5d58f0;
+}
 .story1{
     background-color: white;
     border-radius: 20px;
@@ -380,37 +386,62 @@ nav {
     position: relative;
 }
 #stgrad{
-    background-image: linear-gradient(0deg, rgb(252, 245, 216), #f9f7f3);
+    background-image: linear-gradient(0deg, rgb(248, 237, 192), #f9f7f3);
     padding-bottom: 20px;
 }
-
-
-
-
-@media only screen and (max-width: 768px) {
-    nav {
-        padding: 10px 20px;
-    }
-
-    .banner {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .heroimg {
-        margin-top: 20px;
-        width: 100%;
-    }
-
-    .banner-title {
-        font-size: 2rem;
-    }
-
-    .banner-p {
-        font-size: 1rem;
-    }
+footer{
+    background-color: #01acfd;
+    height: auto;
+    width: 100%;
+    padding: 70px;
 }
+.footdev{
+    display: flex;
+    color: white;
+}
+.footdiv1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color:white;
+    
+}
+.footbar li {
+    list-style: none;
+    
+}
+
+.footbar a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 200;
+    margin-top: 10px;
+   
+}
+.footdev{
+    justify-content: space-around;
+
+}
+.fstfoot{
+    width: 33%;
+}
+.footbar{
+
+}
+.icon{
+    display: flex;
+    gap:5px;
+    padding: 10px 10px 10px 0px;
+}
+.ke{
+    display: block;
+}
+
+
+
+
+
 
 @media only screen and (max-width: 575px) {
     body {
@@ -471,8 +502,7 @@ nav {
         display: none;
     }
     .row{
-        align-items: center;
-        justify-content: center;
+        
     }
     .squrestory{
         padding: 0%;
@@ -493,5 +523,48 @@ nav {
         background-color: black;
        
     }
+    .storyhline h2, .storyhline h4 {
+        font-size: 1rem;
+    }
+    .btn-va {
+        margin-top: 20px;
+    }
+
+    .va {
+        font-size: 1rem;
+        padding: 10px 20px;
+        margin-left: 210px;
+    }
+    .storyheadline{
+        margin-bottom: 40px;
+    }
+    .story1{
+        background-color: white;
+    border-radius: 20px;
+    width: 100px; 
+    height: auto;
+     
+    overflow: hidden; 
+    position: relative;
+    }
+    .storycontent{
+        margin: 0%;
+    }
+    .footdev{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        gap:30px;
+    }
+    .sndfoot h3{
+        font-size: 25px;
+    }
+    .fstfoot{
+        width: 100%;
+    }
+    .sndfoot a{
+        font-size: 20px;
+    }
+   
 
 }
