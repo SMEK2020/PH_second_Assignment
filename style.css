@@ -126,8 +126,9 @@ nav {
     background-image: url("assets/bg.png");
     background-repeat: no-repeat;
     
-    height: 500px;
+    height: auto;
     width: 100%;
+    margin-bottom: 60px;
 }
 .currtitle{
     justify-content: center;
@@ -276,6 +277,115 @@ nav {
     justify-content: center;
     text-align: center;
 }
+.storyheadline{
+    justify-content: center;
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+.stories{
+    background-image: url("assets/bg.png");
+    background-repeat: no-repeat;
+   
+    
+    
+}
+.storycontent{
+    margin: 80px 100px;
+    
+}
+.va{
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+    background-color: black;
+    margin-left: 500px;
+}
+.btn-va{
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+.row img{
+    width: 100%;
+    height: auto;
+   
+}
+.sm1{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.row{
+    display: flex;
+    gap:20px;
+}
+.bigstory{
+    width: 500px;
+   
+}
+.bigstory h2{
+    padding:20px;
+}
+.bigstory p{
+    padding:20px;
+}
+.squrestory{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+    gap: 5px;
+    padding-left: 15px;
+}
+.squrestory h4{
+    padding: 0px 30px 10px 30px;
+}
+.story1{
+    background-color: white;
+    border-radius: 20px;
+}
+.date1,.date2,.date3,.date4,.date5{
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #95b226;
+    position: relative;
+    top: -25px;
+    left: 50px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    padding-top: 8px;
+}
+.story1{
+    background-color: white;
+    border-radius: 20px;
+    
+     
+    overflow: hidden; 
+    position: relative;
+}
+.story2,.story3,.story4,.story5{
+    background-color: white;
+    border-radius: 20px;
+    width: 270px; 
+    height: auto;
+     
+    overflow: hidden; 
+    position: relative;
+}
+#stgrad{
+    background-image: linear-gradient(0deg, rgb(252, 245, 216), #f9f7f3);
+    padding-bottom: 20px;
+}
+
+
+
 
 @media only screen and (max-width: 768px) {
     nav {
@@ -357,4 +467,31 @@ nav {
     .slider{
         display: none;
     }
+    .bigstory{
+        display: none;
+    }
+    .row{
+        align-items: center;
+        justify-content: center;
+    }
+    .squrestory{
+        padding: 0%;
+        margin: 0%;
+    }
+    .stories{
+        align-items: center;
+        justify-content: center;
+    }
+    .va{
+        height: 50px;
+        width: 150px;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        font-size: large;
+        background-color: black;
+       
+    }
+
 }
